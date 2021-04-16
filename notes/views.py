@@ -11,7 +11,7 @@ from rest_framework.views import APIView
 
 from NotesToDo import settings
 from notes.models import Note
-from serializers import NoteListSerializer, NoteSerializer, NoteEditorSerializer, NotePutSerializer, QuerySerializer
+from notes.serializers import NoteListSerializer, NoteSerializer, NoteEditorSerializer, NotePutSerializer, QuerySerializer
 
 
 class NotesToDo(APIView, LimitOffsetPagination):
